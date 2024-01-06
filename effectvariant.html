@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Variant effects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="{{ url_for('index1') }}" class="w3-bar-item w3-button w3-padding-large" >Home</a>
+    <a href="{{ url_for('vaccine') }}" class="w3-bar-item w3-button w3-padding-large">Vaccine</a>
+    <a href="{{ url_for('variant') }}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">New Variant</a>
+    <a href="{{ url_for('evariant') }}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Effects of new variant </a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="{{ url_for('index1') }}" class="w3-bar-item w3-button w3-padding-large" >Home</a>
+  <a href="{{ url_for('vaccine') }}" class="w3-bar-item w3-button w3-padding-large" >Vaccine</a>
+  <a href="{{ url_for('variant') }}" class="w3-bar-item w3-button w3-padding-large">New Variant</a>
+  <a href="{{ url_for('evariant') }}" class="w3-bar-item w3-button w3-padding-large">Effects of new variant</a>
+</div>
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <style>
+    body {margin:00;}
+    
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      bottom: 0;
+      right:0;
+      width: 7%;
+    }
+    
+    .navbar a {
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: right;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 10px;
+    }
+    
+    .navbar a:hover {
+      background: #ddd;
+      color: black;
+    }
+    
+    .main {
+      padding: 16px;
+      margin-bottom: 30px;
+      height: 1500px; /* Used in this example to enable scrolling */
+    }
+    </style>
+    </head>
+    <body>
+  
+        
+
+<!----------------------chatty-------------------------------->
+    <div class="navbar">
+      <a href="#contact">CHATTY</a>
+    </div>
+  
+    
+
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="{{url_for('static', filename='images/varwall.jpeg')}}" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    </div>
+  </div>
+ 
+
+
+<!-------------------------------------------->
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m5 w3-padding-large w3-hide-small">
+      <br>
+   <br>
+   <br>
+   
+   <img src="{{url_for('static', filename='images/11.png')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <img src="{{url_for('static', filename='images/12.jpg')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <img src="{{url_for('static', filename='images/13.jfif')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <img src="{{url_for('static', filename='images/14.png')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-wide">The effects of virus variants on COVID-19 vaccines</h2>
+    <p class="w3-opacity"> 1 March 2021</p>
+    <p class="w3-justify"></p>
+        
+    
+    All viruses – including SARS-CoV-2, the virus that causes COVID-19 – evolve over time. When a virus replicates or makes copies of itself, it sometimes changes a little bit, which is normal for a virus. These changes are called “mutations”. A virus with one or more new mutations is referred to as a “variant” of the original virus.
+        
+    <h3>What causes a virus to change to a new variant?</h3>
+    When a virus is widely circulating in a population and causing many infections, the likelihood of the virus mutating increases. The more opportunities a virus has to spread, the more it replicates – and the more opportunities it has to undergo changes.
+<br>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qD8dAbov5JU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+Most viral mutations have little to no impact on the virus’s ability to cause infections and disease. But depending on where the changes are located in the virus’s genetic material, they may affect a virus’s properties, such as transmission (for example, it may spread more or less easily) or severity (for example, it may cause more or less severe disease). 
+    <br><br>
+
+
+    <h3>What impact do the new variants of the COVID-19 virus have on vaccines?</h3>
+    
+The COVID-19 vaccines that are currently in development or have been approved are expected to provide at least some protection against new virus variants because these vaccines elicit a broad immune response involving a range of antibodies and cells. Therefore, changes or mutations in the virus should not make vaccines completely ineffective. In the event that any of these vaccines prove to be less effective against one or more variants, it will be possible to change the composition of the vaccines to protect against these variants.
+<br><br>
+Data continues to be collected and analysed on new variants of the COVID-19 virus. WHO is working with researchers, health officials and scientists to understand how these variants affect the virus’s behaviour, including their impact on the effectiveness of vaccines, if any. See WHO’s Disease Outbreak News to get up-to-date information on the impact of COVID-19 virus variants on the effectiveness of the different vaccines. This is an area where the evidence remains preliminary and is developing quickly. 
+<br><br>
+While we are learning more, we need to do everything possible to stop the spread of the virus in order to prevent mutations that may reduce the efficacy of existing vaccines. In addition, manufacturers and the programmes using the vaccines may have to adjust to the evolution of the COVID-19 virus: for example, vaccines may need to incorporate more than one strain when in development, booster shots may be required, and other vaccine changes may be needed. Trials must also be designed and maintained to allow any changes in efficacy to be assessed, and must be of sufficient scale and diversity to enable clear interpretation of results. Studies of the impact of vaccines as they are deployed are also essential in order to understand their impact.
+<br><br>
+ 
+<h3>What is WHO doing to monitor and understand the impact of virus variants on the efficacy of COVID-19 vaccines?</h3>
+
+ 
+
+WHO has been tracking mutations and variants since the start of the COVID-19 outbreak. Our global SARS-CoV-2 laboratory network includes a dedicated Virus Evolution Working Group, which aims to detect new changes quickly and assess their possible impact.
+<br><br>
+Research groups have carried out genomic sequencing of the COVID-19 virus and shared these sequences on public databases, including GISAID. This global collaboration allows scientists to better track how the virus is changing. WHO recommends that all countries increase the sequencing of the COVID-19 virus where possible and share data to help one another monitor and respond to the evolving pandemic.
+<br><br>
+WHO has also established a SARS-CoV-2 Risk Monitoring and Evaluation Framework to identify, monitor and assess variants of concern. It will involve components like surveillance, research on variants of concern, and evaluation of the impact on diagnostics, therapeutics and vaccines. The framework will serve as a guide for manufacturers and countries on changes that may be needed for COVID-19 vaccines.
+<br><br>
+
+
+<h3>How can we prevent future new variants of the COVID-19 virus?</h3>
+Stopping the spread at the source remains key. Current measures to reduce transmission – including frequent hand washing, wearing a mask, physical distancing, good ventilation and avoiding crowded places or closed settings – continue to work against new variants by reducing the amount of viral transmission and therefore also reducing opportunities for the virus to mutate.
+<br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/01b-74ljqWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+Scaling up vaccine manufacturing and rolling out vaccines as quickly and widely as possible will also be critical ways of protecting people before they are exposed to the virus and the risk of new variants. Priority should be given to vaccinating high-risk groups everywhere to maximize global protection against new variants and minimize the risk of transmission. Moreover, ensuring equitable access to COVID-19 vaccines is more critical than ever to address the evolving pandemic. As more people get vaccinated, we expect virus circulation to decrease, which will then lead to fewer mutations.
+<br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xLvY210yQkE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3>Why is it important to get vaccinated even if there are new variants of the virus?</h3>
+Vaccines are a critical tool in the battle against COVID-19, and there are clear public health and lifesaving benefits to using the tools we already have. We must not put off getting vaccinated because of our concerns about new variants, and we must proceed with vaccination even if the vaccines may be somewhat less effective against some of the COVID-19 virus variants. We need to use the tools we have in hand even while we continue to improve those tools. We are all safe only if everyone is safe.
+<br><br>
+  
+</div>
+</div>
+
+
+  
+
+  <div class="w3-blue" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center"><b>CONTACT US</b></h2>
+        <p class="w3-opacity w3-center"><i>Always available during emergengies!</i></p>
+        <div class="w3-row w3-padding-10">
+          <div class="w3-col m8 w3-large w3-margin-bottom"><br>
+            <i class="fa fa-map-marker" style="width:30px"></i> India<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +91-11-23978046<br>
+            <i class="fa fa-phone" style="width:30px"></i> Toll Free: 1075<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: ncov2019@gov.in<br>
+            <br>
+            <br>
+            <br>
+          </div>
+          <div class="w3-col m5"></div>
+            <img src="{{url_for('static', filename='images/who.png')}}"width="150" height="150">
+          </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i>The real time data for the website is extracted from <a href="https://www.who.int/">WHO</a></i><br>
+        </div> 
+      </div> 
+    </div>
+   
+
+
+<!-- End Page Content -->
+</div>
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+/*function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}*/
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

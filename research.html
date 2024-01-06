@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Global Research</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="{{ url_for('index1') }}" class="w3-bar-item w3-button w3-padding-large" >Home</a>
+    <a href="{{ url_for('res') }}" class="w3-bar-item w3-button w3-padding-large">Global Research</a>
+    <a href="{{ url_for('india') }}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">India's work on vaccine</a>
+    <a href="{{ url_for('sideeffects') }}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Side Effects</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="{{ url_for('index1') }}" class="w3-bar-item w3-button w3-padding-large" >Home</a>
+  <a href="{{ url_for('res') }}" class="w3-bar-item w3-button w3-padding-large" >Global Research</a>
+  <a href="{{ url_for('india') }}" class="w3-bar-item w3-button w3-padding-large">India's work on vaccine</a>
+  <a href="{{ url_for('sideeffects') }}" class="w3-bar-item w3-button w3-padding-large">Side Effects</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+  <style>
+    body {margin:00;}
+    
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      bottom: 0;
+      right:0;
+      width: 7%;
+    }
+    
+    .navbar a {
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: right;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 10px;
+    }
+    
+    .navbar a:hover {
+      background: #ddd;
+      color: black;
+    }
+    
+    .main {
+      padding: 16px;
+      margin-bottom: 30px;
+      height: 1500px; /* Used in this example to enable scrolling */
+    }
+    </style>
+    </head>
+    <body>
+    
+    
+  <!-- About Section -->
+
+  <div class="navbar">
+    <a href="#contact">CHATTY</a>
+  </div>
+
+
+
+<!-- Automatic Slideshow Images -->
+<div class="mySlides w3-display-container w3-center">
+  <img src="{{url_for('static', filename='images/cov.jpg')}}" style="width:100%">
+  <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+  </div>
+</div>
+
+
+
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <br>
+     <br>
+     <br>
+     <br>
+     <br><br>
+     <img src="{{url_for('static', filename='images/cov.jpg')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <img src="{{url_for('static', filename='images/re.jpg')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+     <br>
+     <br>
+     <br>
+     <br>
+     <img src="{{url_for('static', filename='images/res.png')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Global Research</h1><br>
+      <p class="w3-large">WHO is bringing the world’s scientists and global health professionals together to accelerate the research and development process, and develop new norms and standards to contain the spread of the coronavirus pandemic and help care for those affected.
+
+        The R&D Blueprint has been activated to accelerate diagnostics, vaccines and therapeutics for this novel coronavirus. 
+        
+        The solidarity of all countries will be essential to ensure equitable access to COVID-19 health products.</p>
+        <p class="w3-large">WHO is gathering the latest international multilingual scientific findings and knowledge on COVID-19. The global literature cited in the WHO COVID-19 database is updated daily (Monday through Friday) from searches of bibliographic databases, hand searching, and the addition of other expert-referred scientific articles. This database represents a comprehensive multilingual source of current literature on the topic. While it may not be exhaustive, new research is added regularly.</p>
+        <p class="w3-large"> The WHO evidence retrieval sub-group has begun collaboration with key partners to enrich the citations and build a more comprehensive database with inclusion of other content. The database is built by BIREME, the Specialized Center of PAHO/AMRO and part of the Regional Office’s Department of Evidence and Intelligence for Action in Health. 
+
+            For further information or questions, please contact the WHO Library via email.
+            
+            Disclaimer: the designations employed and the presentation of the material in publications listed in this database does not imply the expression of any opinion whatsoever on the part of WHO concerning the legal status of any country, territory, city or area or of its authorities, or concerning the delimitation of its frontiers or boundaries. Dotted and dashed lines on maps represent approximate border lines for which there may not yet be full agreement.
+            
+            The mention of specific companies or of certain manufacturers’ products in publications listed in the database does not imply that they are endorsed or recommended by WHO in preference to others of a similar nature that are not mentioned. Errors and omissions excepted, the names of proprietary products are distinguished by initial capital letters.
+            
+            By listing publications in this database and providing links to external sites does not mean that WHO endorses or recommends those publications or sites, or has verified the content contained within them. The database has been compiled without warranty of any kind, either expressed or implied. The responsibility for the interpretation and use of publications included in this database lies with the reader. In no event shall WHO be liable for damages arising from its use. </p>
+            <p class="w3-large">The availability of a safe and effective vaccine for COVID-19 is well-recognized as an additional tool to contribute to the control of the pandemic. At the same time, the challenges and efforts needed to rapidly develop, evaluate and produce this at scale are enormous. It is vital that we evaluate as many vaccines as possible as we cannot predict how many will turn out to be viable.
+
+        To increase the chances of success (given the high level of attrition during vaccine development), we must test all candidate vaccines until they fail. WHO is working to ensure that all of them have the chance of being tested at the initial stage of development.
+        
+        This is a major and extraordinary global research undertaking: WHO is facilitating collaboration and accelerated efforts on a scale not seen before; it is convening vital communications across the research community and beyond.
+        
+         </p>
+        </div>
+  </div>
+  
+
+<!-- End page content -->
+</div>
+  
+<div class="w3-blue" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:1000px" id="contact">
+        <h2 class="w3-wide w3-center"><b>CONTACT US</b></h2>
+        <p class="w3-opacity w3-center"><i>Always available during emergengies!</i></p>
+        <div class="w3-row w3-padding-10">
+          <div class="w3-col m8 w3-large w3-margin-bottom"><br>
+            <i class="fa fa-map-marker" style="width:30px"></i> India<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +91-11-23978046<br>
+            <i class="fa fa-phone" style="width:30px"></i> Toll Free: 1075<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: ncov2019@gov.in<br>
+            <br>
+            <br>
+            <br>
+          </div>
+          <div class="w3-col m5"></div>
+            <img src="{{url_for('static', filename='images/who.png')}}"width="150" height="150">
+          </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i>The real time data for the website is extracted from <a href="https://www.who.int/">WHO</a></i><br>
+        </div> 
+      </div> 
+  </div>
+  
+</body>
+</html>

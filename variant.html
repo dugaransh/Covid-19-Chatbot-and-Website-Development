@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Variant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+
+
+ <!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="{{ url_for('index1') }}" class="w3-bar-item w3-button w3-padding-large" >Home</a>
+    <a href="{{ url_for('vaccine') }}" class="w3-bar-item w3-button w3-padding-large">Vaccine</a>
+    <a href="{{ url_for('variant') }}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">New Variant</a>
+    <a href="{{ url_for('evariant') }}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Effects of new variant </a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="{{ url_for('index1') }}" class="w3-bar-item w3-button w3-padding-large" >Home</a>
+  <a href="{{ url_for('vaccine') }}" class="w3-bar-item w3-button w3-padding-large" >Vaccine</a>
+  <a href="{{ url_for('variant') }}" class="w3-bar-item w3-button w3-padding-large">New Variant</a>
+  <a href="{{ url_for('evariant') }}" class="w3-bar-item w3-button w3-padding-large">Effects of new variant</a>
+</div>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <style>
+    body {margin:00;}
+    
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      bottom: 0;
+      right:0;
+      width: 7%;
+    }
+    
+    .navbar a {
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: right;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 10px;
+    }
+    
+    .navbar a:hover {
+      background: #ddd;
+      color: black;
+    }
+    
+    .main {
+      padding: 16px;
+      margin-bottom: 30px;
+      height: 1500px; /* Used in this example to enable scrolling */
+    }
+    </style>
+    </head>
+    <body>
+  
+        
+
+<!----------------------chatty-------------------------------->
+    <div class="navbar">
+      <a href="#contact">CHATTY</a>
+    </div>
+  
+    
+
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="{{url_for('static', filename='images/varwall.jpg')}}" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    </div>
+  </div>
+ 
+
+
+<!-------------------------------------------->
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m5 w3-padding-large w3-hide-small">
+      <br>
+   <br>
+   <br>
+   <br>
+   
+   <img src="{{url_for('static', filename='images/var.jpeg')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+
+   <img src="{{url_for('static', filename='images/var1.png')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <img src="{{url_for('static', filename='images/var2.jfif')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-wide">Variants of the Virus that Causes COVID-19​​ </h2>
+    <p class="w3-opacity">Updated Apr. 2, 2021</p>
+    <p class="w3-justify"></p>
+        
+    
+    Information about the characteristics of these variants is rapidly emerging. Scientists are working to learn more about how easily they spread, whether they could cause more severe illness, and whether currently authorized vaccines will protect people against them.
+    
+    <h3>What we know</h3>
+    Viruses constantly change through mutation, and new variants of a virus are expected to occur over time. Sometimes new variants emerge and disappear. Other times, new variants emerge and persist. Multiple variants of the virus that causes COVID-19 have been documented in the United States and globally during this pandemic.
+    <br><br>
+    The virus that causes COVID-19 is a type of coronavirus, a large family of viruses. Coronaviruses are named for the crown-like spikes on their surfaces. Scientists monitor changes in the virus, including changes to the spikes on the surface of the virus. These studies, including genetic analyses of the virus, are helping scientists understand how changes to the virus might affect how it spreads and what happens to people who are infected with it.
+    <br><br>
+    Multiple variants of the virus that causes COVID-19 are circulating globally and within the United States. In collaboration with a SARS-CoV-2 Interagency Group (SIG), CDC established 3 classifications for the SARS-CoV-2 variants being monitored: Variant of Interest (VOI), Variant of Concern (VOC), and Variant of High Consequence (VOHC).
+    <br><br>
+    There are currently five VOCs in the United States:
+    <br><br>
+    <b>B.1.1.7:</b> This variant was first identified in the US in December 2020. It was initially detected in the UK.
+    <br><br>
+    <b>B.1.351:</b> This variant was first identified in the US at the end of January 2021. It was initially detected in South Africa in December 2020.
+    <br><br>
+        <b>P.1:</b> This variant was first detected in the US in January 2021. P.1 was initially identified in travelers from Brazil, who were tested during routine screening at an airport in Japan, in early January.
+        <br><br>
+            <b>B.1.427</b> and  <b>B.1.429:</b> These two variants were first identified in California in February 2021 and were classified as VOCs in March 2021.
+            <br><br>
+    These variants seem to spread more easily and quickly than other variants, which may lead to more cases of COVID-19. An increase in the number of cases will put more strain on health care resources, lead to more hospitalizations, and potentially more deaths.
+    <br><br>
+    So far, studies suggest that antibodies generated through vaccination with currently authorized vaccines recognize these variants. This is being closely investigated and more studies are underway.
+    <br><br>
+    Rigorous and increased compliance with public health mitigation strategies, such as vaccination, physical distancing, use of masks, hand hygiene, and isolation and quarantine, is essential to limit the spread of the virus that causes COVID-19 and protect public health.
+    <br><br>
+
+
+    <h3>What we do not know</h3>
+    Scientists are working to learn more about these variants, and more studies are needed to understand:
+    <br>
+    <ul>
+    <li>How widely these new variants have spread</li>
+    <li>How the disease caused by these new variants differs from the disease caused by other variants that are currently circulating</li>
+    <li>How these variants may affect existing therapies, vaccines, and tests</li>
+    </ul>
+
+
+ 
+    <h3>What it means</h3>
+    Public health officials are studying these variants quickly to learn more about how to control their spread. They want to understand whether the variants:
+    <br>
+    <ul>
+        <li>Spread more easily from person-to-person</li>
+            <li>Cause milder or more severe disease in people</li>
+                <li>Are detected by currently available viral tests</li>
+    <li>Respond to medicines currently being used to treat people for COVID-19</li>
+    <li>Change the effectiveness of COVID-19 vaccines</li>
+</ul>
+  
+</div>
+</div>
+
+
+  
+
+  <div class="w3-blue" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center"><b>CONTACT US</b></h2>
+        <p class="w3-opacity w3-center"><i>Always available during emergengies!</i></p>
+        <div class="w3-row w3-padding-10">
+          <div class="w3-col m8 w3-large w3-margin-bottom"><br>
+            <i class="fa fa-map-marker" style="width:30px"></i> India<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +91-11-23978046<br>
+            <i class="fa fa-phone" style="width:30px"></i> Toll Free: 1075<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: ncov2019@gov.in<br>
+            <br>
+            <br>
+            <br>
+          </div>
+          <div class="w3-col m5"></div>
+            <img src="{{url_for('static', filename='images/who.png')}}"width="150" height="150">
+          </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i>The real time data for the website is extracted from <a href="https://www.who.int/">WHO</a></i><br>
+        </div> 
+      </div> 
+    </div>
+   
+
+
+<!-- End Page Content -->
+</div>
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+/*function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}*/
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

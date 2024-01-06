@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>COVID ADVICE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+/*.w3-content {
+  background-color: lightblue;
+}*/
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="{{ url_for('index1') }}" class="w3-bar-item w3-button w3-padding-large" >Home</a>
+    <a href="{{ url_for('adv') }}" class="w3-bar-item w3-button w3-padding-large">Advice for people</a>
+    <a href="{{ url_for('tadv') }}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Travel advice</a>
+    <a href="{{ url_for('adm') }}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Advice for health workers and administrators</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="{{ url_for('index1') }}" class="w3-bar-item w3-button w3-padding-large" >Home</a>
+  <a href="{{ url_for('adv') }}" class="w3-bar-item w3-button w3-padding-large" >Advice for people</a>
+  <a href="{{ url_for('tadv') }}" class="w3-bar-item w3-button w3-padding-large">Travel Advice</a>
+  <a href="{{ url_for('adm') }}administrator.html" class="w3-bar-item w3-button w3-padding-large">Advice for health workers and administrators</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <style>
+    body {margin:00;}
+    
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      bottom: 0;
+      right:0;
+      width: 7%;
+    }
+    
+    .navbar a {
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: right;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 10px;
+    }
+    
+    .navbar a:hover {
+      background: #ddd;
+      color: black;
+    }
+    
+    .main {
+      padding: 16px;
+      margin-bottom: 30px;
+      height: 1500px; /* Used in this example to enable scrolling */
+    }
+    </style>
+    </head>
+
+    <body>
+
+    <div class="navbar">
+      <a href="#contact">CHATTY</a>
+    </div>
+    
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="{{url_for('static', filename='images/advice2.png')}}" style="width:100%"/>
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="{{url_for('static', filename='images/advice1.jpg')}}" style="width:100%"/>
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="{{url_for('static', filename='images/advice3.jpg')}}" style="width:100%"/>
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      
+    </div>
+  </div>
+
+  
+<!-------------------------------------------->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m5 w3-padding-large w3-hide-small">
+        <br>
+     <br>
+     <br>
+     <br>
+     <br><br>
+     <img src="{{url_for('static', filename='images/a.jpg')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <img src="{{url_for('static', filename='images/a2.png')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+     <br>
+     <br>
+     <br>
+     <br>
+     <img src="{{url_for('static', filename='images/a3.jpg')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h2 class="w3-wide">ADVICE FOR THE PEOPLE</h2>
+    <p class="w3-opacity"><i>Safety of people is important during a pandemic.</i></p>
+    <p class="w3-justify"></p>
+        
+        <h3><b>What to do to keep yourself and others safe from COVID-19</b></h3>
+  
+        <ul>
+            <li>Maintain at least a 1-metre distance between yourself and others to reduce your risk of infection when they cough, sneeze or speak. 
+                Maintain an even greater distance between yourself and others when indoors. The further away, the better.
+            </li>
+        <li>Make wearing a mask a normal part of being around other people. The appropriate use, storage and cleaning or disposal are essential
+             to make masks as effective as possible.
+        </li>
+        </ul>
+   
+   
+        Here are the basics of how to wear a mask:
+    <ul>   
+        <li>Clean your hands before you put your mask on, as well as before and  after you take it off, and after you touch it at any time.</li>
+       <li> Make sure it covers both your nose, mouth and chin.</li>
+       <li> When you take off a mask, store it in a clean plastic bag, and every day either wash it if it’s a fabric mask, or dispose of a medical mask in a trash bin.
+        Don’t use masks with valves.</li>
+        <br>
+       <i>
+        <li>For specifics on what type of mask to wear and when, read our Q&A and watch our  videos. 
+          There is also a Q&A focused on masks and children.</li>
+        <li> Find out more about the science of how COVID-19 infects people and our bodies react by >watching or reading this interview.</li>
+        <li>For specific advice for decision makers, see WHO’s technical guidance. </li>
+
+       </i>
+    </ul> 
+       
+        <br><br>
+
+        <h3><b>How to make your environment safer</b></h3>
+
+    <ul>
+        <li> 
+         <b>Avoid the 3Cs: spaces that are closed, crowded or involve close contact.</b></n>
+        <ul><li>Outbreaks have been reported in restaurants, choir practices, fitness classes, nightclubs,offices and places of worship where people
+             have gathered, often in crowded indoor settings> where they talk loudly, shout, breathe heavily or sing.</li>
+        <li>The risks of getting COVID-19 are higher in crowded and inadequately ventilated spaces where infected people spend long periods of 
+            time together in close proximity. These environments are where the virus appears to spread by respiratory droplets or aerosols more
+             efficiently, so taking precautions is even more important.</li>
+        </li>
+    </ul>
+    <li>
+        <b>Meet people outside.</b>
+         Outdoor gatherings are safer than indoor ones, particularly if indoor spaces are small and without outdoor air coming in.
+        <ul><li>For more information on how to hold events like family gatherings, children’s football games and family occasions, read 
+            our Q&A on small public gatherings.</li>
+    </li></ul>
+    
+    <li>Avoid crowded or indoor settings but if you can’t, then take precautions:</li>
+    <ul><li>Open a window. Increase the amount of ‘natural ventilation’ when indoors.</li>
+    <li>WHO has published Q&As on ventilation and air conditioning for both the general public and people who 
+        manage public spaces and buildings.</li>
+    <li> Wear a mask (see above for more details).</li>
+
+    </li></ul>
+    </ul>
+         
+        <br><br>
+       <h3><b> Don’t forget the basics of good hygiene</b></h3>
+        <ul><li>Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water. This eliminates germs including viruses that may be on your hands.</li>
+        <li> touching your eyes, nose and mouth. Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and infect you.</li>
+        <li>Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately into a closed bin and wash your hands. By following good ‘respiratory hygiene’, you protect the people around you from viruses, which cause colds, flu and COVID-19.</li>
+        <li>Clean and disinfect surfaces frequently especially those which are regularly touched, such as door handles, faucets and phone screens.</li>
+    </ul>
+    <br><br>
+        <h3><b>What to do if you feel unwell</b></h3>
+        <ul>
+        <li>Know the full range of symptoms of COVID-19. The most common symptoms of COVID-19 are fever, dry cough, and tiredness. Other symptoms that are less common and may affect some patients include loss of taste or smell, aches and pains, headache, sore throat, nasal congestion, red eyes, diarrhoea, or a skin rash.</li>
+            <li>Stay home and self-isolate even if you have minor symptoms such as cough, headache, mild fever, until you recover. Call your health care provider or hotline for advice. Have someone bring you supplies. If you need to leave your house or have someone near you, wear a medical mask to avoid infecting others.</li>
+                <li> If you have a fever, cough and difficulty breathing, seek medical attention immediately. Call by telephone first, if you can and follow the directions of your local health authority.</li>
+                    <li>Keep up to date on the latest information from trusted sources, such as WHO or your local and national health authorities. Local and national authorities and public health units are best placed to advise on what people in your area should be doing to protect themselves.
+
+                    </li>
+                </ul>
+        </div>
+  </div>
+  
+  <!-- The Band Section -->
+  <!------
+  <div class="w3-container w3-content w3-padding-64" style="max-width:100%" id="band" >
+    <h2 class="w3-wide">ADVICE FOR THE PEOPLE</h2>
+    <p class="w3-opacity"><i>Safety of people is important during a pandemic.</i></p>
+    <p class="w3-justify"></p>
+        
+        <h3><b>What to do to keep yourself and others safe from COVID-19</b></h3>
+        <img src="a.jpg" width="30%" height="10%" align ="right" >
+        <ul>
+            <li>Maintain at least a 1-metre distance between yourself and others to reduce your risk of infection <br>when they cough, sneeze or speak. 
+                Maintain an even greater distance between yourself and <br>others when indoors. The further away, the better.
+            </li>
+        <li>Make wearing a mask a normal part of being around other people. The appropriate use, storage<br> and cleaning or disposal are essential
+             to make masks as effective as possible.
+        </li>
+        </ul>
+   
+   
+        Here are the basics of how to wear a mask:
+    <ul>   
+        <li>Clean your hands before you put your mask on, as well as before and <br> after you take it off, and after you touch it at any time.</li>
+       <li> Make sure it covers both your nose, mouth and chin.</li>
+       <li> When you take off a mask, store it in a clean plastic bag, and every day either wash it if it’s a <br>fabric mask, or dispose of a medical mask in a trash bin.
+        Don’t use masks with valves.</li>
+        <br>
+       <i>
+        <li>For specifics on what type of mask to wear and when, read our Q&A and watch our  videos. <br>
+          There is also a Q&A focused on masks and children.</li>
+        <li> Find out more about the science of how COVID-19 infects people and our bodies react by <br>watching or reading this interview.</li>
+        <li>For specific advice for decision makers, see WHO’s technical guidance. </li>
+
+       </i>
+    </ul> 
+       
+        <br><br>
+
+        
+
+    <h3><b>How to make your environment safer</b></h3>
+    <img src="a2.png" width="20%" height="20%" align ="right" >
+    <ul>
+        <li> 
+         <b>Avoid the 3Cs: spaces that are closed, crowded or involve close contact.</b></n>
+        <ul><li>Outbreaks have been reported in restaurants, choir practices, fitness classes, nightclubs,<br> offices and places of worship where people
+             have gathered, often in crowded indoor settings<br> where they talk loudly, shout, breathe heavily or sing.</li>
+        <li>The risks of getting COVID-19 are higher in crowded and inadequately ventilated spaces<br> where infected people spend long periods of 
+            time together in close proximity. These <br>environments are where the virus appears to spread by respiratory droplets or aerosols <br>more
+             efficiently, so taking precautions is even more important.</li>
+        </li>
+    </ul>
+    <li>
+        <b>Meet people outside.</b>
+         Outdoor gatherings are safer than indoor ones, particularly if indoor spaces are small and without outdoor air coming in.
+        <ul><li>For more information on how to hold events like family gatherings, children’s football games and family occasions, read 
+            our Q&A on small public gatherings.</li>
+    </li></ul>
+    
+    <li>Avoid crowded or indoor settings but if you can’t, then take precautions:</li>
+    <ul><li>Open a window. Increase the amount of ‘natural ventilation’ when indoors.</li>
+    <li>WHO has published Q&As on ventilation and air conditioning for both the general public and people who 
+        manage public spaces and buildings.</li>
+    <li> Wear a mask (see above for more details).</li>
+
+    </li></ul>
+    </ul>
+         <img src="a3.jpg" width="20%" height="20%" align ="right" >
+        <br><br>
+       <h3><b> Don’t forget the basics of good hygiene</b></h3>
+        <ul><li>Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water. This eliminates germs including viruses that may be on your hands.</li>
+        <li> touching your eyes, nose and mouth. Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and infect you.</li>
+        <li>Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately into a closed bin and wash your hands. By following good ‘respiratory hygiene’, you protect the people around you from viruses, which cause colds, flu and COVID-19.</li>
+        <li>Clean and disinfect surfaces frequently especially those which are regularly touched, such as door handles, faucets and phone screens.</li>
+    </ul>
+    <br><br>
+        <h3><b>What to do if you feel unwell</b></h3>
+        <ul>
+        <li>Know the full range of symptoms of COVID-19. The most common symptoms of COVID-19 are fever, dry cough, and tiredness. Other symptoms that are less common and may affect some patients include loss of taste or smell, aches and pains, headache, sore throat, nasal congestion, red eyes, diarrhoea, or a skin rash.</li>
+            <li>Stay home and self-isolate even if you have minor symptoms such as cough, headache, mild fever, until you recover. Call your health care provider or hotline for advice. Have someone bring you supplies. If you need to leave your house or have someone near you, wear a medical mask to avoid infecting others.</li>
+                <li> If you have a fever, cough and difficulty breathing, seek medical attention immediately. Call by telephone first, if you can and follow the directions of your local health authority.</li>
+                    <li>Keep up to date on the latest information from trusted sources, such as WHO or your local and national health authorities. Local and national authorities and public health units are best placed to advise on what people in your area should be doing to protect themselves.
+
+                    </li>
+                </ul>
+  </div>
+-->
+
+
+
+  <!-- The advice Section -->
+  <div class="w3-light-blue" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">GENERAL ADVICE</h2>
+      <p class="w3-opacity w3-center"><i>Remember to do certain things on a daily basis!!</i></p><br>
+      <ul class="w3-ul w3-border w3-white w3-text-black">
+        <li class="w3-padding">HOME CARE</li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+            <a href="{{url_for('static', filename='images/illppl.PNG')}}" download>
+                <img src="{{url_for('static', filename='images/illppl.PNG')}}" alt="New York" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            <p><b>Advice for ill people</b></p>
+            <p class="w3-opacity">-by WHO</p>
+            
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+            <a href="{{url_for('static', filename='images/allmem.PNG')}}" download>
+          <img src="{{url_for('static', filename='images/allmem.PNG')}}" alt="Paris" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            <p><b>Advice for all the members</b></p>
+            <p class="w3-opacity">-by WHO</p>
+          
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+            <a href="{{url_for('static', filename='images/caregiver.PNG')}}" download>
+                <img src="{{url_for('static', filename='images/caregiver.PNG')}}" alt="San Francisco" style="width:100%" class="w3-hover-opacity"></a>
+          <div class="w3-container w3-white">
+            <p><b>Advice forcare givers</b></p>
+            <p class="w3-opacity">-by WHO</p>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">  
+        <ul class="w3-ul w3-border w3-white w3-text-black">
+          <li class="w3-padding">HOW TO COPE WITH STRESS</li>
+        </ul> 
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+          <div class="w3-third w3-margin-bottom">
+              <a href="{{url_for('static', filename='images/stress.pdf')}}" download>
+                <embed src="{{url_for('static', filename='images/stress.pdf')}}" width="100%" height="350px" /></a>
+            <div class="w3-container w3-white">
+              <p><b>For adults</b></p>
+              <p class="w3-opacity">-by WHO</p>
+              <p>Here are some steps you can take to cope up with stress!</p>
+
+            </div>
+          </div>
+          <div class="w3-third w3-margin-bottom">
+              <a href="{{url_for('static', filename='images/stresschildren.pdf')}}" download>
+                <embed src="{{url_for('static', filename='images/stresschildren.pdf')}}" width="100%" height="350px" /></a>
+            <div class="w3-container w3-white">
+              <p><b>For children</b></p>
+              <p class="w3-opacity">-by WHO</p>
+              <p>Children get affected by lots of stress during such a pandemic.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="w3-blue" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center"><b>CONTACT US</b></h2>
+        <p class="w3-opacity w3-center"><i>Always available during emergengies!</i></p>
+        <div class="w3-row w3-padding-10">
+          <div class="w3-col m8 w3-large w3-margin-bottom"><br>
+            <i class="fa fa-map-marker" style="width:30px"></i> India<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +91-11-23978046<br>
+            <i class="fa fa-phone" style="width:30px"></i> Toll Free: 1075<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: ncov2019@gov.in<br>
+            <br>
+            <br>
+            <br>
+          </div>
+          <div class="w3-col m5"></div>
+          <img src="{{url_for('static', filename='images/who.png')}}" width="150" height="150"/>
+            </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i>The real time data for the website is extracted from <a href="https://www.who.int/">WHO</a></i><br>
+        </div> 
+      </div> 
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+/*function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}*/
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

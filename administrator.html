@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>WORKER ADVICE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="{{ url_for('index1') }}" class="w3-bar-item w3-button w3-padding-large" >Home</a>
+      <a href="{{ url_for('adv') }}" class="w3-bar-item w3-button w3-padding-large">Advice for people</a>
+      <a href="{{ url_for('tadv') }}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Travel advice</a>
+      <a href="{{ url_for('adm') }}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Advice for health workers and administrators</a>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+  </div>
+  
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="{{ url_for('index1') }}" class="w3-bar-item w3-button w3-padding-large" >Home</a>
+    <a href="{{ url_for('adv') }}" class="w3-bar-item w3-button w3-padding-large" >Advice for people</a>
+    <a href="{{ url_for('tadv') }}" class="w3-bar-item w3-button w3-padding-large">Travel Advice</a>
+    <a href="{{ url_for('adm') }}" class="w3-bar-item w3-button w3-padding-large">Advice for health workers and administrators</a>
+  </div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <style>
+    body {margin:00;}
+    
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      bottom: 0;
+      right:0;
+      width: 7%;
+    }
+    
+    .navbar a {
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: right;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 10px;
+    }
+    
+    .navbar a:hover {
+      background: #ddd;
+      color: black;
+    }
+    
+    .main {
+      padding: 16px;
+      margin-bottom: 30px;
+      height: 1500px; /* Used in this example to enable scrolling */
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="navbar">
+      <a href="#contact">CHATTY</a>
+    </div>
+    
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="{{url_for('static', filename='images/admin.png')}}" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+       
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+       <img src="{{url_for('static', filename='images/admin2.jpg')}}" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+       
+    </div>
+  </div><div class="mySlides w3-display-container w3-center">
+    <img src="{{url_for('static', filename='images/admin3.jpg')}}" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      
+    </div>
+  </div>
+
+
+<!-------------------------------------------->
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m5 w3-padding-large w3-hide-small">
+      <br>
+   <br>
+   <br>
+   <br>
+   <br><br>
+   <img src="{{url_for('static', filename='images/b.png')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <img src="{{url_for('static', filename='images/b1.jpg')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+   <br>
+   <br>
+   <br>
+   <br>
+   <img src="{{url_for('static', filename='images/b2.jfif')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+   <br>
+   <br>
+   <br>
+   <br>
+   <img src="{{url_for('static', filename='images/b3.png')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-wide">Health workers and administrators</h2>
+    <p class="w3-opacity">It is the safety that matters during a pandemic!</p>
+    <p class="w3-justify"></p>
+        
+    Health workers are central to the COVID-19 pandemic response, balancing additional service delivery needs while preserving access to essential health services and
+     deploying COVID-19 vaccines. They also face higher risks of infection in their efforts to protect the greater community and are exposed to hazards such as psychological
+      distress, fatigue and stigma.
+<br>
+    To address these challenges, WHO provides the latest advice, guidance and training for both health workers and administrators.
+ <br>  
+ <h3>Readiness</h3>
+ To help policy-makers and planners invest in ensuring the readiness, education and learning of the health workforce, WHO provides support for strategic workforce planning, support and capacity-building.
+ <ul>
+<li> Interim guidance on Health workforce policy and management in the context of the COVID-19 pandemic response</li>
+ <li>Health Workforce Estimator (HWFE) to anticipate response staffing requirements</li>
+ <li>The Health Workforce Support and Safeguards List comprises countries facing the most pressing health workforce challenges, from which active international recruitment is discouraged.</li>
+</ul>
+
+Dedicated learning resources to support expanded clinical roles and tasks, as well as support for COVID-19 vaccines roll-out, are available for individual health workers.
+ Managers and planners can access additional resources to support learning and education requirements.
+<ul>
+ <li>OpenWHO has a multi-language course library that is also accessible through the WHO Academy COVID-19 learning app, which includes a new augmented 
+     reality course on personal protective equipment.</li>
+<li> The COVID-19 vaccine introduction toolbox has the latest resources, including guidance, tools and trainings.</li>
+ </ul>
+ 
+ Learn how to utilise your role as a health worker and trusted source of information. You can also be a role model by getting the vaccine, protecting yourself and helping your patients and the public understand the benefits.
+ <ul><li>
+ Review WHO Information Network for Epidemics (EPI-WIN) updates for accurate information and clear explanations about COVID-19 and vaccines.</li>
+ <li>Access the community engagement guide for tips and discussion topics to be considered in vaccine delivery and demand.</li>
+ <li>Learn about infodemic management: help your patients and communities manage the overabundance of information and learn how to seek trusted sources.</li>
+ </ul>
+ 
+<h3>Infection prevention and control</h3>
+Preventing SARS-CoV-2 infections in health workers requires a multi-pronged, integrated approach of infection prevention and control (IPC) and occupational 
+health and safety (OHS) measures.
+<br>
+<br>WHO recommends that all healthcare facilities establish and implement IPC programmes and OHS programmes with protocols that ensure health worker safety and 
+prevent infections with SARS-CoV-2 in the work environment.
+<br>
+<br>A blame-free system for managing health worker exposures to COVID-19 should be in place to promote and support reporting of exposures or symptoms. 
+Health workers should be encouraged to report both occupational and non-occupational exposures to COVID-19.
+
+<br>
+<h3>Occupational safety and health</h3>
+<b>WHO/ILO interim guidance COVID-19: Occupational health and safety for health workers,
+     published 2 February 2020</b>
+<br>
+This document provides specific measures to protect occupational health and safety of health workers and highlights the duties, rights and responsibilities for health and safety at work in the context of COVID-19.
+<br><br>
+<b>Prevention of violence </b>
+<br>
+Measures for zero-tolerance of violence should be established in all health facilities and for protection of health workers in the community. Workers should be encouraged to report incidences of verbal, physical violate and sexual harassment. Security measures, including guards, panic buttons, cameras should be introduced. Staff should be trained in prevention of violence.
+<br>
+<a href="https://www.who.int/activities/healthy-workplaces-a-who-global-model-for--action">- Access the document on violence prevention</a>
+<br><br>
+<b>Prevention of fatigue</b>
+<br>
+
+Develop working time schemes for the scheme for the different categories of health workers involved  - ICUs, primary care, first responders, ambulances, sanitation etc., including maximum working hours per work shift (five eight-hours or four 10-hour shifts per week), frequent rest breaks (e.g. every 1-2 hours during demanding work) and minimum 10 consecutive hours of rest between work shifts.
+<br>
+<a href="https://www.who.int/publications/i/item/9789241550369">- Access the document on fatigue prevention</a><br><br>
+<b>Compensation, hazard pay, priority treatment </b>
+<br>
+Excessive hours of work should be discouraged. Ensure adequate staffing levels to prevent excessive individual workloads, and minimize the risk of unsustainable working hours. Where extra hours are necessary, compensatory measures such as overtime pay or compensatory time off should be considered. Where necessary, and in a gender-sensitive manner, consideration should be given to mechanisms for determining hazardous duty pay. Where exposure and infection are work-related, health and emergency workers should be provided with adequate compensation, including when quarantined. In the event of scarcity of treatment for those contracting COVID19, each employer should develop, through social dialogue, a treatment distribution protocol and specify the priority of health and emergency workers in receiving treatment.
+<br>
+<a href="https://www.ilo.org/sector/activities/sectoral-meetings/WCMS_626551/lang--en/index.htm">- Access the document on priority treatment</a>
+<br><br>
+<h3>Clinical care</h3>
+<b>Clinical management of patients with suspected COVID-19 infection</b>
+<br>
+Short guidance is available for clinicians taking care of hospitalised adult and paediatric patients with severe acute respiratory infection. It is not meant to replace clinical judgment or specialist consultation but rather to strengthen clinical management of these patients and provide to up-to-date guidance. 
+<br>
+<a href="https://www.who.int/publications/i/item/10665-332299">- Access the guidance on clinical care</a>
+<br><br>
+<b>Interim guidance – Home care for patients with suspected or confirmed COVID-19 and management of their contacts  
+</b><br>
+This provides recommendations on the safe home care for patients with suspected or confirmed COVID-19 infection. It includes guidance on how to determine
+ if the home environment is suitable for a patient with COVID-19, and precautions to be taken by health care workers when caring for a patient in the home.
+<br>
+<a href="https://www.who.int/publications/i/item/10665-330671">- Access the document on home care </a>
+<br><br>
+<h3>Vaccination</h3>
+<a href="https://who.cloudflareaccess.com/cdn-cgi/access/login/cms.who.int?kid=cdb38d9e0badb7ac2edd7aa0eb95fcba14b69b4b426c028a0d7856e3610d9bc9&v=5f6265d7&redirect_url=%2Ftools%2Fcovid-19-vaccine-introduction-toolkit&meta=eyJraWQiOiI4NzFhN2ZhYmY3N2ZmZDI5MGI0OTc1NjFlMThmZTc2NDYwYjM5M2ExZmJjOTQ0MmM3ZjUzYzU0ZTVlZWJhYTVlIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYifQ.eyJpc193YXJwIjpmYWxzZSwibmJmIjoxNjE4MDc4ODMzLCJhdXRoX3N0YXR1cyI6Ik5PTkUiLCJzZXJ2aWNlX3Rva2VuX2lkIjoiIiwic2VydmljZV90b2tlbl9zdGF0dXMiOmZhbHNlLCJ0eXBlIjoibWV0YSIsImlzX2dhdGV3YXkiOmZhbHNlLCJhdWQiOiJjZGIzOGQ5ZTBiYWRiN2FjMmVkZDdhYTBlYjk1ZmNiYTE0YjY5YjRiNDI2YzAyOGEwZDc4NTZlMzYxMGQ5YmM5IiwiaWF0IjoxNjE4MDc4ODMzfQ.QSbPXg8pjsNvbZNehX4F6CXoiZ97wxbtY1x0hhWdA6wJ1Ke7IG7GKc02DH4h2ImkSy68iHYv2TJQA2-fYRlJu0NzMGKb1aG7dVpO9MKE_BoRmf9bwAYr-kzAvmLiSftAE6SvtJppqMYmzyt71gbl_H_qLzXbQni6wseuka2H1420DRFfNqrM1g_KFQRBkh8O9p74iT1TfGXf4DfFxD_6fHhRmBtuvPvM-EoGtSxEJ4QWn3s5U3mZ56Oe1kMZ4G5-TWzie6Zlq63gMo1PMy37SExIDIRf_edFeMB2grsdPvbRUx8dWXzbASg0CcV1r64t6Iuf4qOzXvcKKf-eQmFR5w"><b>COVID-19 vaccine introduction toolkit</b></a>
+<br>This toolbox equips all countries to prepare for and implement COVID-19 vaccination by providing guidance, tools, and training. It is intended to support ministries of health, health workers, partner organizations, and other stakeholders. 
+<br>
+<a href="https://openwho.org/courses/covid-19-vaccination-healthworkers-en"><b>OpenWHO COVID-19 vaccination training</b></a>
+<br>This package is for frontline health workers. It was developed in collaboration with UNICEF and covers organizing, recording and monitoring vaccination; storage, handling, delivery and waste management; AEFI monitoring; and communication with the community on COVID-19 vaccination. To access PowerPoint slides for local trainings, email: COVID19vaccineresources@who.int
+<br>
+<a href="https://openwho.org/courses/COVID-19-vaccines"><b>OpenWHO COVID-19 vaccine specific training</b></a>
+<br>This provides an overview of how to safely prepare, handle, and administer COVID-19 vaccines that have received Emergency Use Listing (EUL).
+
+      </div>
+</div>
+
+  <!-- The Band Section 
+  <div class="w3-container w3-content w3-margin-left w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Health workers and administrators</h2>
+    <p class="w3-opacity">It is the safety that matters during a pandemic!</p>
+    <p class="w3-justify"></p>
+        
+    Health workers are central to the COVID-19 pandemic response, balancing additional service delivery needs while preserving access to essential health services and
+     deploying COVID-19 vaccines. They also face higher risks of infection in their efforts to protect the greater community and are exposed to hazards such as psychological
+      distress, fatigue and stigma.
+<br>
+    To address these challenges, WHO provides the latest advice, guidance and training for both health workers and administrators.
+ <br>  
+ <h3>Readiness</h3>
+ To help policy-makers and planners invest in ensuring the readiness, education and learning of the health workforce, WHO provides support for strategic workforce planning, support and capacity-building.
+ <ul>
+<li> Interim guidance on Health workforce policy and management in the context of the COVID-19 pandemic response</li>
+ <li>Health Workforce Estimator (HWFE) to anticipate response staffing requirements</li>
+ <li>The Health Workforce Support and Safeguards List comprises countries facing the most pressing health workforce challenges, from which active international recruitment is discouraged.</li>
+</ul>
+
+Dedicated learning resources to support expanded clinical roles and tasks, as well as support for COVID-19 vaccines roll-out, are available for individual health workers.
+ Managers and planners can access additional resources to support learning and education requirements.
+<ul>
+ <li>OpenWHO has a multi-language course library that is also accessible through the WHO Academy COVID-19 learning app, which includes a new augmented 
+     reality course on personal protective equipment.</li>
+<li> The COVID-19 vaccine introduction toolbox has the latest resources, including guidance, tools and trainings.</li>
+ </ul>
+ 
+ Learn how to utilise your role as a health worker and trusted source of information. You can also be a role model by getting the vaccine, protecting yourself and helping your patients and the public understand the benefits.
+ <ul><li>
+ Review WHO Information Network for Epidemics (EPI-WIN) updates for accurate information and clear explanations about COVID-19 and vaccines.</li>
+ <li>Access the community engagement guide for tips and discussion topics to be considered in vaccine delivery and demand.</li>
+ <li>Learn about infodemic management: help your patients and communities manage the overabundance of information and learn how to seek trusted sources.</li>
+ </ul>
+ 
+<h3>Infection prevention and control</h3>
+Preventing SARS-CoV-2 infections in health workers requires a multi-pronged, integrated approach of infection prevention and control (IPC) and occupational 
+health and safety (OHS) measures.
+<br>
+<br>WHO recommends that all healthcare facilities establish and implement IPC programmes and OHS programmes with protocols that ensure health worker safety and 
+prevent infections with SARS-CoV-2 in the work environment.
+<br>
+<br>A blame-free system for managing health worker exposures to COVID-19 should be in place to promote and support reporting of exposures or symptoms. 
+Health workers should be encouraged to report both occupational and non-occupational exposures to COVID-19.
+
+<br>
+<h3>Occupational safety and health</h3>
+<b>WHO/ILO interim guidance COVID-19: Occupational health and safety for health workers,
+     published 2 February 2020</b>
+<br>
+This document provides specific measures to protect occupational health and safety of health workers and highlights the duties, rights and responsibilities for health and safety at work in the context of COVID-19.
+<br><br>
+<b>Prevention of violence </b>
+<br>
+Measures for zero-tolerance of violence should be established in all health facilities and for protection of health workers in the community. Workers should be encouraged to report incidences of verbal, physical violate and sexual harassment. Security measures, including guards, panic buttons, cameras should be introduced. Staff should be trained in prevention of violence.
+<br>
+<a href="https://www.who.int/activities/healthy-workplaces-a-who-global-model-for--action">- Access the document on violence prevention</a>
+<br><br>
+<b>Prevention of fatigue</b>
+<br>
+
+Develop working time schemes for the scheme for the different categories of health workers involved  - ICUs, primary care, first responders, ambulances, sanitation etc., including maximum working hours per work shift (five eight-hours or four 10-hour shifts per week), frequent rest breaks (e.g. every 1-2 hours during demanding work) and minimum 10 consecutive hours of rest between work shifts.
+<br>
+<a href="https://www.who.int/publications/i/item/9789241550369">- Access the document on fatigue prevention</a><br><br>
+<b>Compensation, hazard pay, priority treatment </b>
+<br>
+Excessive hours of work should be discouraged. Ensure adequate staffing levels to prevent excessive individual workloads, and minimize the risk of unsustainable working hours. Where extra hours are necessary, compensatory measures such as overtime pay or compensatory time off should be considered. Where necessary, and in a gender-sensitive manner, consideration should be given to mechanisms for determining hazardous duty pay. Where exposure and infection are work-related, health and emergency workers should be provided with adequate compensation, including when quarantined. In the event of scarcity of treatment for those contracting COVID19, each employer should develop, through social dialogue, a treatment distribution protocol and specify the priority of health and emergency workers in receiving treatment.
+<br>
+<a href="https://www.ilo.org/sector/activities/sectoral-meetings/WCMS_626551/lang--en/index.htm">- Access the document on priority treatment</a>
+<br><br>
+<h3>Clinical care</h3>
+<b>Clinical management of patients with suspected COVID-19 infection</b>
+<br>
+Short guidance is available for clinicians taking care of hospitalised adult and paediatric patients with severe acute respiratory infection. It is not meant to replace clinical judgment or specialist consultation but rather to strengthen clinical management of these patients and provide to up-to-date guidance. 
+<br>
+<a href="https://www.who.int/publications/i/item/10665-332299">- Access the guidance on clinical care</a>
+<br><br>
+<b>Interim guidance – Home care for patients with suspected or confirmed COVID-19 and management of their contacts  
+</b><br>
+This provides recommendations on the safe home care for patients with suspected or confirmed COVID-19 infection. It includes guidance on how to determine
+ if the home environment is suitable for a patient with COVID-19, and precautions to be taken by health care workers when caring for a patient in the home.
+<br>
+<a href="https://www.who.int/publications/i/item/10665-330671">- Access the document on home care </a>
+<br><br>
+<h3>Vaccination</h3>
+<a href="https://who.cloudflareaccess.com/cdn-cgi/access/login/cms.who.int?kid=cdb38d9e0badb7ac2edd7aa0eb95fcba14b69b4b426c028a0d7856e3610d9bc9&v=5f6265d7&redirect_url=%2Ftools%2Fcovid-19-vaccine-introduction-toolkit&meta=eyJraWQiOiI4NzFhN2ZhYmY3N2ZmZDI5MGI0OTc1NjFlMThmZTc2NDYwYjM5M2ExZmJjOTQ0MmM3ZjUzYzU0ZTVlZWJhYTVlIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYifQ.eyJpc193YXJwIjpmYWxzZSwibmJmIjoxNjE4MDc4ODMzLCJhdXRoX3N0YXR1cyI6Ik5PTkUiLCJzZXJ2aWNlX3Rva2VuX2lkIjoiIiwic2VydmljZV90b2tlbl9zdGF0dXMiOmZhbHNlLCJ0eXBlIjoibWV0YSIsImlzX2dhdGV3YXkiOmZhbHNlLCJhdWQiOiJjZGIzOGQ5ZTBiYWRiN2FjMmVkZDdhYTBlYjk1ZmNiYTE0YjY5YjRiNDI2YzAyOGEwZDc4NTZlMzYxMGQ5YmM5IiwiaWF0IjoxNjE4MDc4ODMzfQ.QSbPXg8pjsNvbZNehX4F6CXoiZ97wxbtY1x0hhWdA6wJ1Ke7IG7GKc02DH4h2ImkSy68iHYv2TJQA2-fYRlJu0NzMGKb1aG7dVpO9MKE_BoRmf9bwAYr-kzAvmLiSftAE6SvtJppqMYmzyt71gbl_H_qLzXbQni6wseuka2H1420DRFfNqrM1g_KFQRBkh8O9p74iT1TfGXf4DfFxD_6fHhRmBtuvPvM-EoGtSxEJ4QWn3s5U3mZ56Oe1kMZ4G5-TWzie6Zlq63gMo1PMy37SExIDIRf_edFeMB2grsdPvbRUx8dWXzbASg0CcV1r64t6Iuf4qOzXvcKKf-eQmFR5w"><b>COVID-19 vaccine introduction toolkit</b></a>
+<br>This toolbox equips all countries to prepare for and implement COVID-19 vaccination by providing guidance, tools, and training. It is intended to support ministries of health, health workers, partner organizations, and other stakeholders. 
+<br>
+<a href="https://openwho.org/courses/covid-19-vaccination-healthworkers-en"><b>OpenWHO COVID-19 vaccination training</b></a>
+<br>This package is for frontline health workers. It was developed in collaboration with UNICEF and covers organizing, recording and monitoring vaccination; storage, handling, delivery and waste management; AEFI monitoring; and communication with the community on COVID-19 vaccination. To access PowerPoint slides for local trainings, email: COVID19vaccineresources@who.int
+<br>
+<a href="https://openwho.org/courses/COVID-19-vaccines"><b>OpenWHO COVID-19 vaccine specific training</b></a>
+<br>This provides an overview of how to safely prepare, handle, and administer COVID-19 vaccines that have received Emergency Use Listing (EUL).
+
+ </div>--->
+
+
+
+
+  <div class="w3-blue" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center"><b>CONTACT US</b></h2>
+        <p class="w3-opacity w3-center"><i>Always available during emergengies!</i></p>
+        <div class="w3-row w3-padding-10">
+          <div class="w3-col m8 w3-large w3-margin-bottom"><br>
+            <i class="fa fa-map-marker" style="width:30px"></i> India<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +91-11-23978046<br>
+            <i class="fa fa-phone" style="width:30px"></i> Toll Free: 1075<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: ncov2019@gov.in<br>
+            <br>
+            <br>
+            <br>
+          </div>
+          <div class="w3-col m5"></div>
+            <img src="{{url_for('static', filename='images/who.png')}}"width="150" height="150">
+          </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i>The real time data for the website is extracted from <a href="https://www.who.int/">WHO</a></i><br>
+        </div> 
+      </div> 
+    </div>
+
+<!-- End Page Content -->
+</div>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+/*function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}*/
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

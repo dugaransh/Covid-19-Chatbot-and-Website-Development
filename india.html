@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>India covid19</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="{{ url_for('index1') }}" class="w3-bar-item w3-button w3-padding-large" >Home</a>
+    <a href="{{ url_for('res') }}" class="w3-bar-item w3-button w3-padding-large">Global Research</a>
+    <a href="{{ url_for('india') }}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">India's work on vaccine</a>
+    <a href="{{ url_for('sideeffects') }}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Side Effects</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="{{ url_for('index1') }}" class="w3-bar-item w3-button w3-padding-large" >Home</a>
+  <a href="{{ url_for('res') }}" class="w3-bar-item w3-button w3-padding-large" >Global Research</a>
+  <a href="{{ url_for('india') }}" class="w3-bar-item w3-button w3-padding-large">India's work on vaccine</a>
+  <a href="{{ url_for('sideeffects') }}" class="w3-bar-item w3-button w3-padding-large">Side Effects</a>
+</div>
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <style>
+    body {margin:00;}
+    
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      bottom: 0;
+      right:0;
+      width: 7%;
+    }
+    
+    .navbar a {
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: right;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 10px;
+    }
+    
+    .navbar a:hover {
+      background: #ddd;
+      color: black;
+    }
+    
+    .main {
+      padding: 16px;
+      margin-bottom: 30px;
+      height: 1500px; /* Used in this example to enable scrolling */
+    }
+    </style>
+    </head>
+    <body>
+  
+        
+
+<!----------------------chatty-------------------------------->
+    <div class="navbar">
+      <a href="#contact">CHATTY</a>
+    </div>
+  
+    
+
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="{{url_for('static', filename='images/covaxin.jfif')}}" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    </div>
+  </div>
+ 
+
+
+<!-------------------------------------------->
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m5 w3-padding-large w3-hide-small">
+      <br>
+   <br>
+   <br>
+   <br>
+   
+   <img src="{{url_for('static', filename='images/covaxin1.jpg')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+
+   <img src="{{url_for('static', filename='images/covaxin2.jpg')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <img src="{{url_for('static', filename='images/covaxin3.jpg')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-wide">COVAXIN® </h2>
+    <p class="w3-opacity">India's First Indigenous COVID-19 Vaccine</p>
+    <p class="w3-justify"></p>
+        
+
+COVAXIN®, India's indigenous COVID-19 vaccine by Bharat Biotech is developed in collaboration with the Indian Council of Medical Research (ICMR) - National Institute of Virology (NIV).
+<br><br>
+The indigenous, inactivated vaccine is developed and manufactured in Bharat Biotech's BSL-3 (Bio-Safety Level 3) high containment facility.
+<br><br>
+The vaccine is developed using Whole-Virion Inactivated Vero Cell derived platform technology. Inactivated vaccines do not replicate and are therefore unlikely to revert and cause pathological effects. They contain dead virus, incapable of infecting people but still able to instruct the immune system to mount a defensive reaction against an infection.
+<br><br>
+Why develop Inactivated Vaccine? Conventionally, inactivated vaccines have been around for decades. Numerous vaccines for diseases such as Seasonal Influenza, Polio, Pertussis, Rabies, and Japanese Encephalitis use the same technology to develop inactivated vaccines with a safe track record of >300 million doses of supplies to date. It is the well-established, and time-tested platform in the world of vaccine technology.
+<br><br>
+Key Attributes:
+<ul>
+   <li>COVAXIN® is included along with immune-potentiators, also known as vaccine adjuvants, which are added to the vaccine to increase and boost its immunogenicity.</li>
+
+   <li>It is a 2-dose vaccination regimen given 28 days apart.</li>
+
+   <li>It is a vaccine with no sub-zero storage, no reconstitution requirement, and ready to use liquid presentation in multi-dose vials, stable at 2-8oC.</li>
+
+   <li>Pre-clinical studies: Demonstrated strong immunogenicity and protective efficacy in animal challenge studies conducted in hamsters & non-human primates. For more information about our animal study, please visit our blog page on Non-Human Primates.</li>
+
+   <li>The vaccine received DCGI approval for Phase I & II Human Clinical Trials in July, 2020.</li>
+
+   <li>A total of 375 subjects have been enrolled in the Phase 1 study and generated excellent safety data without any reactogenicity. Vaccine-induced neutralizing antibody titers were observed with two divergent SARS-CoV-2 strains. Percentage of all the side-effects combined was only 15% in vaccine recipients. For further information, visit our blog page on phase 1 study.</li>
+
+   <li>In Phase 2 study, 380 participants of 12-65 years were enrolled. COVAXIN® led to tolerable safety outcomes and enhanced humoral and cell-mediated immune responses. Know more about our phase 2 study.</li>
+
+   <li>A total of 25,800 subjects have been enrolled and randomized in a 1:1 ratio to receive the vaccine and control in a Event-Driven, randomized, double-blind, placebo-controlled, multicentre phase 3 study.</li>
+
+   <li>The purpose of this study is to evaluate the efficacy, safety, and immunogenicity of COVAXIN® in volunteers aged ≥18 years.</li>
+
+   <li>Of the 25,800 participants, >2400 volunteers were above 60 years of age and >4500 with comorbid conditions.</li>
+
+<li>COVAXIN® demonstrated 81% interim efficacy in preventing COVID-19 in those without prior infection after the second dose.</li>
+</ul>
+
+
+
+<h4>COVAXIN® effective against UK variant strain:</h4>
+Analysis from the National Institute of Virology indicates that vaccine-induced antibodies can neutralize the UK variant strains and other heterologous strains.
+<br>
+
+
+
+<h4>Global Acceptance of COVAXIN®:</h4>
+Bharat biotech has been approached by several countries across the world for the procurement of COVAXIN®.
+<ul>
+<li>Clinical trials in other countries to commence soon.</li>
+
+<li>Supplies from government to government in the following countries to take place: Mongolia, Myanmar, Sri Lanka, Philippines, Bahrain, Oman, Maldives and Mauritius.</li>
+</ul>
+<br>
+ 
+<h3>Fact sheet for COVAXINE®     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    COVAXIN® - Publications</h3>
+<a href="{{url_for('static', filename='images/covaxin-fact-sheet.pdf')}}" download>
+  <embed src="{{url_for('static', filename='images/covaxin-fact-sheet.pdf')}}" width="40%" height="300px" /></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="{{url_for('static', filename='images/covaxin-fact-sheet.pdf')}}" download>
+    <embed src="{{url_for('static', filename='images/covaxin-fact-sheet.pdf')}}" width="40%" height="300px" /></a>
+  
+</div>
+</div>
+
+
+  
+
+  <div class="w3-blue" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center"><b>CONTACT US</b></h2>
+        <p class="w3-opacity w3-center"><i>Always available during emergengies!</i></p>
+        <div class="w3-row w3-padding-10">
+          <div class="w3-col m8 w3-large w3-margin-bottom"><br>
+            <i class="fa fa-map-marker" style="width:30px"></i> India<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +91-11-23978046<br>
+            <i class="fa fa-phone" style="width:30px"></i> Toll Free: 1075<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: ncov2019@gov.in<br>
+            <br>
+            <br>
+            <br>
+          </div>
+          <div class="w3-col m5"></div>
+            <img src="{{url_for('static', filename='images/who.png')}}"width="150" height="150">
+          </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i>The real time data for the website is extracted from <a href="https://www.who.int/">WHO</a></i><br>
+        </div> 
+      </div> 
+    </div>
+   
+
+
+<!-- End Page Content -->
+</div>
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+/*function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}*/
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

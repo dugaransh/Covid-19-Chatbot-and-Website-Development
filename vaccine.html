@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>VACCINE Covid 19</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="{{ url_for('index1') }}" class="w3-bar-item w3-button w3-padding-large" >Home</a>
+    <a href="{{ url_for('vaccine') }}" class="w3-bar-item w3-button w3-padding-large">Vaccine</a>
+    <a href="{{ url_for('variant') }}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">New Variant</a>
+    <a href="{{ url_for('evariant') }}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Effects of new variant </a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="{{ url_for('index1') }}" class="w3-bar-item w3-button w3-padding-large" >Home</a>
+  <a href="{{ url_for('vaccine') }}" class="w3-bar-item w3-button w3-padding-large" >Vaccine</a>
+  <a href="{{ url_for('variant') }}" class="w3-bar-item w3-button w3-padding-large">New Variant</a>
+  <a href="{{ url_for('evariant') }}" class="w3-bar-item w3-button w3-padding-large">Effects of new variant</a>
+</div>
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <style>
+    body {margin:00;}
+    
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      bottom: 0;
+      right:0;
+      width: 7%;
+    }
+    
+    .navbar a {
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: right;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 10px;
+    }
+    
+    .navbar a:hover {
+      background: #ddd;
+      color: black;
+    }
+    
+    .main {
+      padding: 16px;
+      margin-bottom: 30px;
+      height: 1500px; /* Used in this example to enable scrolling */
+    }
+    </style>
+    </head>
+    <body>
+  
+        
+
+<!----------------------chatty-------------------------------->
+    <div class="navbar">
+      <a href="#contact">CHATTY</a>
+    </div>
+  
+    
+
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="{{url_for('static', filename='images/vaccine.png')}}" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    </div>
+  </div>
+ 
+
+
+<!-------------------------------------------->
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m5 w3-padding-large w3-hide-small">
+      <br>
+   <br>
+   <br>
+   <br>
+   <br><br>
+   <img src="{{url_for('static', filename='images/vac.jpg')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <img src="{{url_for('static', filename='images/vac3.jpg')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <img src="{{url_for('static', filename='images/vac2.jpg')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+   
+  </div>
+
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-wide">Coronavirus disease (COVID-19): Vaccines</h2>
+    <p class="w3-opacity">28 October 2020 | Q&A</p>
+    <p class="w3-justify"></p>
+        
+
+
+        <h3><b>Is there a COVID-19 Vaccine?</b></h3>
+        Yes there are now several vaccines that are in use. The first mass vaccination programme started in early December 2020 and as of and as of 15 February 2021, 175.3 million vaccine doses have been administered. At least 7 different vaccines (3 platforms) have been administered.
+<br><br>
+WHO issued an Emergency Use Listing (EULs) for the Pfizer COVID-19 vaccine (BNT162b2) on 31 December 2020. On 15 February 2021, WHO issued EULs for two versions of the AstraZeneca/Oxford COVID-19 vaccine, manufactured by the Serum Institute of India and SKBio. On 12 March 2021, WHO issued an EUL for the COVID-19 vaccine Ad26.COV2.S, developed by Janssen (Johnson & Johnson). WHO is on track to EUL other vaccine products through June. 
+<br><br>
+The products and progress in regulatory review by WHO is provided by WHO and updated regularly. The document is provided here.
+<br><br>
+Once vaccines are demonstrated to be safe and efficacious, they must be authorized by national regulators, manufactured to exacting standards, and distributed. WHO is working with partners around the world to help coordinate key steps in this process, including to facilitate equitable access to safe and effective COVID-19 vaccines for the billions of people who will need them. 
+        <br>
+
+
+
+
+        <h3><b>When will covid 19 vaccines be ready for distribution?</b></h3>
+        The first COVID-19 vaccines have already begun to be introduced in countries. Before COVID-19 vaccines can be delivered:
+<ul>
+<li>The vaccines must be proven safe and effective in large (phase III) clinical trials.  Some COVID-19 vaccine candidates have completed their phase III trials, and many other potential vaccines are being developed.</li>
+<li>Independent reviews of the efficacy and safety evidence is required for each vaccine candidate, including regulatory review and approval in the country where the vaccine is manufactured, before WHO considers a vaccine candidate for prequalification. Part of this process also involves the Global Advisory Committee on Vaccine Safety.</li>
+    <li>In addition to review of the data for regulatory purposes, the evidence must also be reviewed for the purpose of policy recommendations on how the vaccines should be used.</li>
+        <li>An external panel of experts convened by WHO, called the Strategic Advisory Group of Experts on Immunization (SAGE), analyzes the results from clinical trials, along with evidence on the disease, age groups affected, risk factors for disease, programmatic use, and other information. SAGE then recommends whether and how the vaccines should be used.</li>
+            <li>Officials in individual countries decide whether to approve the vaccines for national use and develop policies for how to use the vaccines in their country based on the WHO recommendations.</li>
+                <li>The vaccines must be manufactured in large quantities, which is a major and unprecedented challenge – all the while continuing to produce all the other important life-saving vaccines already in use.</li>
+As a final step, all approved vaccines will require distribution through a complex logistical process, with rigorous stock management and temperature control.
+
+</ul>
+WHO is working with partners around the world to accelerate every step of this process, while also ensuring the highest safety standards are met. 
+   
+
+
+
+        <h3><b>Benefits of getting vaccinated</b></h3>
+The COVID-19 vaccines produce protection against the disease, as a result of developing an immune response to the SARS-Cov-2 virus.  
+Developing immunity through vaccination means there is a reduced risk of developing the  illness and its consequences. 
+This immunity helps you fight the virus if exposed. Getting vaccinated may also protect people around you, because if you are protected from
+ getting infected and from disease, you are less likely to infect someone else. This is particularly important to protect people at increased 
+ risk for severe illness from COVID-19, such as healthcare providers, older or elderly adults, and people with other medical conditions.
+<br>
+
+<h3><b>What type of covid vaccines have been developed? How would they work?</b></h3>
+Scientists around the world are developing many potential vaccines for COVID-19. These vaccines are all designed to teach the body’s immune system to safely recognize and block the virus that causes COVID-19.
+<br><br>
+Several different types of potential vaccines for COVID-19 are in development, including:
+<ul>
+<li>Inactivated or weakened virus vaccines, which use a form of the virus that has been inactivated or weakened so it doesn’t cause disease, but still generates an immune response.</li>
+<li >vaccines, which use harmless fragments of proteins or protein shells that mimic the COVID-19 virus to safely generate an immune response.</li>
+<li>Viral vector vaccines, which use a safe virus that cannot cause disease but serves as a platform to produce coronavirus proteins to generate an immune response.</li>
+<li>RNA and DNA vaccines, a cutting-edge approach that uses genetically engineered RNA or DNA to generate a protein that itself safely prompts an immune response.</li>
+   
+
+</ul>
+
+<br>
+
+   <h3><b>Is the vaccine safe for children?</b></h3>
+   Vaccines are usually tested in adults first, to avoid exposing children who are still developing and growing. COVID-19 has also been a more serious and dangerous disease among older populations. Now that the vaccines have been determined to be safe for adults, they are being studied in children. Once those studies have been completed, we should know more and guidelines will be developed.
+<br>
+In the meantime, make sure children continue to physical distance from others, clean their hands frequently, sneeze and cough into their elbow and wear a mask if age appropriate.
+   <br>
+   <h3><b>Will covid 19 vaccine provide long term protection?</b></h3>
+   Because COVID vaccines have only been developed in the past months, it’s too early to know the duration of protection of COVID-19 vaccines. Research is ongoing to answer this question. However, it’s encouraging that available data suggest that most people who recover from COVID-19 develop an immune response that provides at least some period of protection against reinfection – although we’re still learning how strong this protection is, and how long it lasts.
+
+      </div>
+</div>
+
+
+  
+
+  <div class="w3-blue" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center"><b>CONTACT US</b></h2>
+        <p class="w3-opacity w3-center"><i>Always available during emergengies!</i></p>
+        <div class="w3-row w3-padding-10">
+          <div class="w3-col m8 w3-large w3-margin-bottom"><br>
+            <i class="fa fa-map-marker" style="width:30px"></i> India<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +91-11-23978046<br>
+            <i class="fa fa-phone" style="width:30px"></i> Toll Free: 1075<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: ncov2019@gov.in<br>
+            <br>
+            <br>
+            <br>
+          </div>
+          <div class="w3-col m5"></div>
+            <img src="{{url_for('static', filename='images/who.png')}}"width="150" height="150">
+          </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i>The real time data for the website is extracted from <a href="https://www.who.int/">WHO</a></i><br>
+        </div> 
+      </div> 
+    </div>
+   
+
+
+<!-- End Page Content -->
+</div>
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+/*function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}*/
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

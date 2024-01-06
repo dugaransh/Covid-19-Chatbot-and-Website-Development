@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>TRAVEL ADVICE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="{{ url_for('index1') }}" class="w3-bar-item w3-button w3-padding-large" >Home</a>
+    <a href="{{ url_for('adv') }}" class="w3-bar-item w3-button w3-padding-large">Advice for people</a>
+    <a href="{{ url_for('tadv') }}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Travel advice</a>
+    <a href="{{ url_for('adm') }}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Advice for health workers and administrators</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="{{ url_for('index1') }}" class="w3-bar-item w3-button w3-padding-large" >Home</a>
+  <a href="{{ url_for('adv') }}" class="w3-bar-item w3-button w3-padding-large" >Advice for people</a>
+  <a href="{{ url_for('tadv') }}" class="w3-bar-item w3-button w3-padding-large">Travel Advice</a>
+  <a href="{{ url_for('adm') }}" class="w3-bar-item w3-button w3-padding-large">Advice for health workers and administrators</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <style>
+    body {margin:00;}
+    
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      bottom: 0;
+      right:0;
+      width: 7%;
+    }
+    
+    .navbar a {
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: right;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 10px;
+    }
+    
+    .navbar a:hover {
+      background: #ddd;
+      color: black;
+    }
+    
+    .main {
+      padding: 16px;
+      margin-bottom: 30px;
+      height: 1500px; /* Used in this example to enable scrolling */
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="navbar">
+      <a href="#contact">CHATTY</a>
+    </div>
+    
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="{{url_for('static', filename='images/travel3.jpg')}}" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="{{url_for('static', filename='images/travel2.jpg')}}" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="{{url_for('static', filename='images/travel1.png')}}" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      
+    </div>
+  </div>
+
+
+<!-------------------------------------------->
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m5 w3-padding-large w3-hide-small">
+      <br>
+   <br>
+   <br>
+   <br>
+   <br><br>
+   <img src="{{url_for('static', filename='images/c.jpg')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <img src="{{url_for('static', filename='images/c1.png')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+   <br>
+   <br>
+   <br>
+   <br>
+   
+   <img src="{{url_for('static', filename='images/c2.jpg')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+   <br>
+   <br>
+   <br>
+   <br>
+   <img src="{{url_for('static', filename='images/c5.jpg')}}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500" height="500">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h2 class="w3-wide">Interim position paper: considerations regarding proof of COVID-19 vaccination for international travellers</h2>
+    <p class="w3-opacity">5 February 2021 | COVID-19 Travel Advice</p>
+    <p class="w3-justify"></p>
+        
+        <h3><b>Introduction</b></h3>
+        The World Health Organization (WHO) issues regularly updated position papers on vaccines against diseases that have an international 
+        public health impact. This paper, which presents WHO’s position on the advisability of requirements for COVID-19 vaccination or proof 
+        of vaccination for international travellers, is designed for use mainly by national public health officials and managers of immunization 
+        programmes. It may also be of interest to other branches of government responsible for travel or immigration, international funding agencies, 
+        ne advisory groups, the medical community, the scientific media and the public.
+        <BR>  <br>  
+        The paper presents scientific, ethical, legal and technological considerations regarding the possible introduction of requirements by 
+        States Parties of proof of COVID-19 vaccination for outgoing or incoming international travellers, pursuant to  provisions of the International 
+        Health Regulations (2005) (IHR).
+       <br>     <br>
+        It does not address the use of certificates for signifying a person’s immune status, which reflects whether a
+        person has developed antibodies in response to SARS-CoV-2 infection; whereas vaccination status reflects only whether someone 
+        has received a COVID-19 vaccine. WHO has outlined  considerations regarding “immunity” passports elsewhere.  In addition, for more
+        detailed discussion on ethical issues and considerations pertaining to immunity passports, please refer to the peer-reviewed article 
+        “Immunity certification for COVID-19: ethical considerations”.
+        <br>
+        <h3><b>WHO position</b></h3>
+        At the present time, it is WHO’s position that national authorities and conveyance operators should not introduce requirements of proof of COVID-19 vaccination for international 
+        travel as a condition for departure or entry, given that there are still critical unknowns regarding the efficacy of vaccination in reducing 
+        transmission. In addition, considering that there is limited availability of vaccines, preferential vaccination of travellers could result in 
+        inadequate supplies of vaccines for priority populations considered at high risk of severe COVID-19 disease. WHO also recommends that people who
+        are vaccinated should not be exempt from complying with other travel risk-reduction measures.
+        <br> <br>
+        These Temporary Recommendations are in accordance with the advice that the International Health Regulations Emergency Committee on 
+        COVID-19 pandemic formulated at its 6th meeting on 14 January 2021. They will be reviewed in three months’ time or at the next meeting of 
+        the Emergency Committee, if not sooner.
+   
+        <h3><b>Scientific considerations</b></h3>
+A number of scientific unknowns remain concerning the effectiveness of COVID-19 vaccines: efficacy in preventing disease and limiting transmission,
+ including for variants of SARS-CoV-2; duration of protection offered by vaccination; timing of booster doses; whether vaccination offers 
+ protection against asymptomatic infection; age and population groups that should be prioritized for vaccination, specific contraindications, how
+  long before travel vaccines should be offered; and possible exemption of people who have antibodies against SARS-CoV-2.
+<br><br>
+Recommendations will evolve as evidence about existing and new COVID-19 vaccines is compiled and on advice from the WHO Strategic Advisory Group
+ of Experts on Immunization (SAGE). To date, WHO has provided recommendations on two vaccines for Emergency Use Listing, the mRNA vaccine BNT162b2 
+ (Pfizer–BioNTech), and the Moderna mRNA-1273 vaccine, following extraordinary meetings of the SAGE on 5 and 25 January 2021.
+ <br><br>
+The interim recommendations provide scientific considerations regarding the effectiveness of these two vaccines against COVID-19 and the 
+population groups and settings in which they are recommended. The recommendations also list current research gaps for efficacy and protection.
+ With respect to the use of these vaccines in international travellers, the SAGE concluded that WHO currently does not recommend COVID-19 vaccination
+  of travellers unless they belong to a high-risk group (including older persons are those with underlying medical conditions) or in epidemiological
+   settings identified in the WHO SAGE Prioritization Roadmap. 
+The group added that with increasing vaccine supply, these recommendations will be revisited.
+<br>
+
+<h3><b>Ethical considerations</b></h3>
+Currently, there is limited access to COVID-19 vaccines worldwide, particularly in low-income and lower middle-income countries. 
+ At present, 94% of countries that have started vaccinating their populations are in the high- or high-middle-income category. WHO has
+  expressed concern that the inequitable distribution of COVID-19 vaccines could deepen already existing inequalities and introduce new ones.  
+<br><br>
+In the current context, introducing a requirement of vaccination as a condition for travel has the potential to hinder equitable global 
+access to a limited vaccine supply and would be unlikely to maximize the benefits of vaccination for individual societies and overall global health. 
+ While individual, economic and social benefits could potentially be promoted through such a policy, 
+these benefits also have to be balanced against the risk to public health based on current scientific knowledge, including critical 
+unknowns about the risks mitigated by vaccination.  
+<br><br>
+Another ethical consideration is equity in the general distribution of benefits and burdens. In the context of unequal vaccine distribution,
+ individuals who do not have access to an authorized COVID-19 vaccine would be unfairly impeded in their freedom of movement if proof of vaccination
+  status became a condition for entry to or exit from a country.  National authorities should choose public health interventions that least infringe
+   on individual freedom of movement.
+   <br>
+
+   <h3><b>Legal considerations</b></h3>
+   States Parties, who have agreed to the provisions of the IHR, are expected to abide by its stipulations concerning the introduction of a 
+   requirement for proof of vaccination for outgoing or incoming international travellers. At its 6th meeting on 14 January 2021, 
+   the COVID-19 IHR Emergency Committee regarding the COVID-19 pandemic advised that it is premature for countries to require proof of 
+   vaccination for international travellers. Subsequently, the WHO Director-General, in the context of the public health emergency of international 
+   concern related to COVID-19 pandemic, issued the following Temporary Recommendation for countries: “At the present time, countries should not 
+   introduce requirements of proof of vaccination or immunity for international travel as a condition of entry as there are still critical unknowns 
+   regarding the efficacy of vaccination in reducing transmission and limited availability of vaccines.”
+   <br><br>
+   Currently, yellow fever is the only disease mentioned in the IHR for which countries can require proof of vaccination for 
+   international travellers (Annex 7 of the IHR). In addition, in the context of the public health emergency of international concern 
+   of the international spread of poliovirus, and following the advice of the Polio IHR Emergency Committee, WHO issues every three months 
+   Temporary Recommendations allowing certain affected countries to require proof of polio vaccination for international travellers.
+   <br><br>
+   Should the requirement of proof of COVID-19 vaccination for international travellers be introduced in future in accordance with IHR 
+   provisions, vaccines must be approved by WHO*, and be of suitable quality and universally available, for the protection of all people
+    from international spread of disease.  (See Articles 31, 36, 40, 43 and Annexes 6 and 7 of the IHR for more information on provisions 
+    related to vaccination requirements for international travellers. For provisions related to the issuance of Temporary Recommendations or 
+    Standing Recommendations under the Regulations, which may allow countries to introduce requirements of proof of vaccination for international
+     travellers as a condition of entry or exit, see Articles 12, 15, 18 and 53.)
+     <br><br>
+   *Vaccines "approved" by WHO means: WHO Prequalified vaccines or included in the Emergency Use List
+   <br>
+   <h3><b>Technological considerations</b></h3>
+   Under the aegis of the Digital Health Technical Advisory Group, WHO has launched a Smart Vaccination Certificate Working Group to inform the development of specifications and guidance for using digital technologies for documenting vaccination status. Although vaccination status can easily be captured via digital means,
+    the ability to uniquely identify an individual and validate vaccination status requires international cooperation, orchestration across complex 
+    systems and widespread adoption of open interoperability standards to support secure data access or exchange. The guidance issued by this group 
+    will include a required minimum data set, standards for interoperability and recommended governance, digital functionality and systems 
+    architecture, to align with the scientific, legal, and ethical considerations outlined in this position paper.
+    <br><br>
+   A digital vaccination certificate will additionally have to support the needs of national immunization programmes; while ensuring that digital
+    technologies do not engender or perpetuate inequities. WHO is working with partners to establish a governance framework and specifications for 
+    a digital vaccination certificate for possible use at both national and international levels.   
+    <br><br>
+   Regardless of any technology implemented in future, the COVID-19 vaccination status of international travellers should be recorded through 
+   the International Certificate for Vaccination and Prophylaxis based on the model presented in Annex 6 of the IHR. The same format could be 
+   adapted once WHO pre-qualified COVID-19 vaccines become available universally and relevant recommendations are provided under the IHR.
+   <br>
+
+   <hr>
+   <i><b>The formulation of recommendations by WHO on the use of a COVID-19 vaccine is informed by the advice of the WHO Strategic Advisory Group of 
+   Experts on Immunization (SAGE). Based on analysis conducted by the SAGE working group on COVID-19 vaccines, SAGE provides advice to WHO and 
+   its Member States on the use of initially pre-licensed COVID-19 vaccines,
+    followed by updates as additional information on product use becomes available.
+<br><br>
+   The COVID-19 IHR Emergency Committee is convened by the WHO Director-General under the IHR to provide advice on whether events constitute a
+    public health emergency of international concern and propose related Temporary Recommendations that should be taken up by countries to prevent
+     or reduce the international spread of disease and avoid unnecessary interference with international trade and travel.</b></i>
+    
+      </div>
+</div>
+
+
+  
+
+  <div class="w3-blue" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center"><b>CONTACT US</b></h2>
+        <p class="w3-opacity w3-center"><i>Always available during emergengies!</i></p>
+        <div class="w3-row w3-padding-10">
+          <div class="w3-col m8 w3-large w3-margin-bottom"><br>
+            <i class="fa fa-map-marker" style="width:30px"></i> India<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +91-11-23978046<br>
+            <i class="fa fa-phone" style="width:30px"></i> Toll Free: 1075<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: ncov2019@gov.in<br>
+            <br>
+            <br>
+            <br>
+          </div>
+          <div class="w3-col m5"></div>
+            <img src="{{url_for('static', filename='images/who.png')}}"width="150" height="150">
+          </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i>The real time data for the website is extracted from <a href="https://www.who.int/">WHO</a></i><br>
+        </div> 
+      </div> 
+    </div>
+   
+
+
+<!-- End Page Content -->
+</div>
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+/*function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}*/
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
